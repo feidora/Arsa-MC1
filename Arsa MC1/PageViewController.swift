@@ -63,9 +63,29 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
            return orderedViewControllers[nextIndex]
        }
     
+    var pageControl = UIPageControl()
+    func configurePageControl() {
+          // The total number of pages that are available is based on how many available colors we have.
+          pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 240,width: UIScreen.main.bounds.width,height: 50))
+          self.pageControl.numberOfPages = orderedViewControllers.count
+          self.pageControl.currentPage = 0
+//          self.pageControl.tintColor = UIColor.systemPink
+        self.pageControl.pageIndicatorTintColor = UIColor(red:0.65, green:0.27, blue:0.16, alpha:0.3)
+          self.pageControl.currentPageIndicatorTintColor = UIColor(red:0.65, green:0.27, blue:0.16, alpha:1.00)
+          self.view.addSubview(pageControl)
+      }
+    
+    // MARK: Delegate functions
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = orderedViewControllers.firstIndex(of: pageContentViewController)!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.delegate = self
+            configurePageControl()
        self.dataSource = self
 
               // This sets up the first view that will show up on our page control

@@ -39,10 +39,6 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dots-2" translatesAutoresizingMaskIntoConstraints="NO" id="vny-jV-keK">
-                                <rect key="frame" x="196" y="678" width="19" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-nP-yoT">
                                 <rect key="frame" x="344" y="78" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,10 +80,6 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dots-1" translatesAutoresizingMaskIntoConstraints="NO" id="54F-NL-tjR">
-                                <rect key="frame" x="201" y="675" width="19" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sev-Qz-jbg">
                                 <rect key="frame" x="153" y="767" width="108" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,8 +100,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dots-1" width="128" height="51"/>
-        <image name="dots-2" width="128" height="51"/>
         <image name="foto-2" width="359" height="366"/>
         <image name="foto-3" width="359" height="362"/>
         <image name="kalimat1" width="1345" height="144"/>
