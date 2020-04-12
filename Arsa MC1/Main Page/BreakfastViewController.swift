@@ -79,7 +79,7 @@ class BreakfastViewController: UIViewController, UICollectionViewDelegate, UICol
 //        cell.backgroundColor = .blue
         cell.breakfastFoodName.text = "\(makanan.breakfastFoodName)"
         cell.breakfastFoodCalories.text = "\(makanan.breakfastFoodCalories)"
-        
+        cell.breakfastImage.image = UIImage(named: "\(category)-\(indexPath.row + 1)")
         return cell }
         return BreakfastCollectionViewCell()
     }
@@ -91,7 +91,7 @@ class BreakfastViewController: UIViewController, UICollectionViewDelegate, UICol
          func initMakanan(category: Category) {
          self.navigationItem.title = category.mealsType
         tipeMakanan = getSuggestionMenu(forCategoryTitle: category.mealsType)
-        
+            self.category = category.mealsType.lowercased()
     }
 
     func getSuggestionMenu(forCategoryTitle title:String) -> [Makanan] {

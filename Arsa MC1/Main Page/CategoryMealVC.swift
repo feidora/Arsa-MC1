@@ -29,7 +29,7 @@ class CategoryMealVC: UIViewController, UITableViewDelegate, UITableViewDataSour
       override func viewDidLoad() {
           super.viewDidLoad()
         helloNama.text = "Hello, \(nama)!"
-        fullfiledCalories.text = "Fullfiled / \(calories)"
+        fullfiledCalories.text = "Fullfiled / \(calories) cal"
       }
     
     
