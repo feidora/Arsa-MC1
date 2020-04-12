@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */; };
+		3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */; };
+		3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */; };
+		3EABBE6524434B7D00466AA5 /* BreakfastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6424434B7D00466AA5 /* BreakfastViewController.swift */; };
+		3EABBE6724434BC200466AA5 /* BreakfastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */; };
+		3EABBE6924434BF100466AA5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6824434BF100466AA5 /* Category.swift */; };
+		3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE6A24434C1000466AA5 /* MainPage.storyboard */; };
 		CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA6DEE02442047E009531C6 /* PageViewController.swift */; };
 		E62DED24244091890034D701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED23244091890034D701 /* AppDelegate.swift */; };
 		E62DED26244091890034D701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED25244091890034D701 /* SceneDelegate.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
+		3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesPopUpVC.swift; sourceTree = "<group>"; };
+		3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealVC.swift; sourceTree = "<group>"; };
+		3EABBE6424434B7D00466AA5 /* BreakfastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastViewController.swift; sourceTree = "<group>"; };
+		3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastCollectionViewCell.swift; sourceTree = "<group>"; };
+		3EABBE6824434BF100466AA5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3EABBE6A24434C1000466AA5 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		CAA6DEE02442047E009531C6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E62DED20244091890034D701 /* Arsa MC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arsa MC1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62DED23244091890034D701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EABBE5C24434A4400466AA5 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				3EABBE6824434BF100466AA5 /* Category.swift */,
+				3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */,
+				3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */,
+				3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */,
+				3EABBE6424434B7D00466AA5 /* BreakfastViewController.swift */,
+				3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */,
+				3EABBE6A24434C1000466AA5 /* MainPage.storyboard */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
 		E62DED17244091890034D701 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +94,7 @@
 				E62DED2E244091890034D701 /* LaunchScreen.storyboard */,
 				E62DED31244091890034D701 /* Info.plist */,
 				CAA6DEE02442047E009531C6 /* PageViewController.swift */,
+				3EABBE5C24434A4400466AA5 /* Main Page */,
 			);
 			path = "Arsa MC1";
 			sourceTree = "<group>";
@@ -128,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */,
 				E62DED30244091890034D701 /* LaunchScreen.storyboard in Resources */,
 				E62DED2D244091890034D701 /* Assets.xcassets in Resources */,
 				E62DED2B244091890034D701 /* Main.storyboard in Resources */,
@@ -142,7 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E62DED28244091890034D701 /* ViewController.swift in Sources */,
+				3EABBE6924434BF100466AA5 /* Category.swift in Sources */,
 				E62DED24244091890034D701 /* AppDelegate.swift in Sources */,
+				3EABBE6724434BC200466AA5 /* BreakfastCollectionViewCell.swift in Sources */,
+				3EABBE6524434B7D00466AA5 /* BreakfastViewController.swift in Sources */,
+				3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */,
+				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
+				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,
 				E62DED26244091890034D701 /* SceneDelegate.swift in Sources */,
 				CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */,
 			);
