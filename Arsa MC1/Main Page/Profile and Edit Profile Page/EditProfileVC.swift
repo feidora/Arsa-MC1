@@ -19,10 +19,10 @@ class EditProfileVC: UIViewController {
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     @IBAction func saveChangesButtonPressed(_ sender: Any) {
-        if nameTextField.text != "" {
-            if heightTextField.text != "" {
-                if weightTextField.text != "" {
-                    if ageTextField.text != "" {
+        if nameTextField.text != "Name" {
+            if heightTextField.text != "165" {
+                if weightTextField.text != "55" {
+                    if ageTextField.text != "20" {
                         performSegue(withIdentifier: "editProfileSegue", sender: self)
                     }
                 }
@@ -45,25 +45,25 @@ class EditProfileVC: UIViewController {
         super.viewDidLoad()
 
         // Date PickerView
-        datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(EditProfileVC.dateChanged(datePicker:)), for: .valueChanged)
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(EditProfileVC.viewTapped(gestureRecognizer:)))
-        
-        view.addGestureRecognizer(tapGesture)
-        
-        ageTextField.inputView = datePicker
+//        datePicker = UIDatePicker()
+//        datePicker.datePickerMode = .date
+//        datePicker.addTarget(self, action: #selector(EditProfileVC.dateChanged(datePicker:)), for: .valueChanged)
+//
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(EditProfileVC.viewTapped(gestureRecognizer:)))
+//
+//        view.addGestureRecognizer(tapGesture)
+//
+//        ageTextField.inputView = datePicker
     }
     
-    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
-        view.endEditing(true)
-    }
-
-    @objc func dateChanged(datePicker: UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "mm/dd/yyyy"
-        ageTextField.text = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
-    }
+//    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+//        view.endEditing(true)
+//    }
+//
+//    @objc func dateChanged(datePicker: UIDatePicker) {
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "mm/dd/yyyy"
+//        ageTextField.text = dateFormatter.string(from: datePicker.date)
+//        view.endEditing(true)
+//    }
 }

@@ -36,10 +36,24 @@ class ProfilePageVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        nameLabelPP.text = changedName
+        heightWeightLabelPP.text = "\(changedHeight) / \(changedWeight)"
+        ageLabelPP.text = changedAge
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    
+//    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let favoriteMenu = menus[indexPath.row]
+//        performSegue(withIdentifier: "menuDetailsSegue", sender: favoriteMenu)
+//    }
+//    
+//    @IBAction func menuDetailsPressed(_ sender: Any) {
+//        performSegue(withIdentifier: "menuDetailsSegue", sender: self)
+//    }
     @IBAction func unwindToProfile(_ sender: UIStoryboardSegue) {}
     
 }
