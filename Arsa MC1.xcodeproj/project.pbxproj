@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E10764B2444ECC1005F5A44 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */; };
 		3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */; };
 		3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */; };
 		3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */; };
@@ -15,6 +16,11 @@
 		3EABBE6924434BF100466AA5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6824434BF100466AA5 /* Category.swift */; };
 		3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE6A24434C1000466AA5 /* MainPage.storyboard */; };
 		3EABBE6D2444A2B800466AA5 /* MenuDetailsCopyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6C2444A2B800466AA5 /* MenuDetailsCopyVC.swift */; };
+		3EABBE732444DE9100466AA5 /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE722444DE9100466AA5 /* Gaegu-Light.ttf */; };
+		3EABBE752444E52E00466AA5 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE742444E52E00466AA5 /* PersonalData.storyboard */; };
+		3EABBE782444E5D700466AA5 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE772444E5D700466AA5 /* ActivityVC.swift */; };
+		3EABBE7C2444E61F00466AA5 /* AllergiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */; };
+		3EABBE7E2444E7D500466AA5 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */; };
 		CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA6DEE02442047E009531C6 /* PageViewController.swift */; };
 		E62DED24244091890034D701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED23244091890034D701 /* AppDelegate.swift */; };
 		E62DED26244091890034D701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED25244091890034D701 /* SceneDelegate.swift */; };
@@ -30,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
 		3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesPopUpVC.swift; sourceTree = "<group>"; };
 		3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealVC.swift; sourceTree = "<group>"; };
@@ -38,6 +45,11 @@
 		3EABBE6824434BF100466AA5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		3EABBE6A24434C1000466AA5 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		3EABBE6C2444A2B800466AA5 /* MenuDetailsCopyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsCopyVC.swift; sourceTree = "<group>"; };
+		3EABBE722444DE9100466AA5 /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
+		3EABBE742444E52E00466AA5 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
+		3EABBE772444E5D700466AA5 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesVC.swift; sourceTree = "<group>"; };
+		3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		CAA6DEE02442047E009531C6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E62DED20244091890034D701 /* Arsa MC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arsa MC1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62DED23244091890034D701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +96,18 @@
 				E64B7DD9244412A50052C0DF /* Profile and Edit Profile Page */,
 			);
 			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		3EABBE762444E53E00466AA5 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				3EABBE742444E52E00466AA5 /* PersonalData.storyboard */,
+				3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */,
+				3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */,
+				3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */,
+				3EABBE772444E5D700466AA5 /* ActivityVC.swift */,
+			);
+			path = PersonalData;
 			sourceTree = "<group>";
 		};
 		E62DED17244091890034D701 = {
@@ -142,6 +166,8 @@
 				E64B7DE32444F32B0052C0DF /* MenuDetailsCopy2VC.swift */,
 				E64B7DE1244424150052C0DF /* EditProfileVC.swift */,
 				E64B7DDF24441DE40052C0DF /* ProfilePageVC.swift */,
+				3EABBE722444DE9100466AA5 /* Gaegu-Light.ttf */,
+				3EABBE762444E53E00466AA5 /* PersonalData */,
 			);
 			path = "Profile and Edit Profile Page";
 			sourceTree = "<group>";
@@ -207,7 +233,9 @@
 				3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */,
 				E62DED30244091890034D701 /* LaunchScreen.storyboard in Resources */,
 				E62DED2D244091890034D701 /* Assets.xcassets in Resources */,
+				3EABBE732444DE9100466AA5 /* Gaegu-Light.ttf in Resources */,
 				E64B7DDE24441D360052C0DF /* ProfilePage.storyboard in Resources */,
+				3EABBE752444E52E00466AA5 /* PersonalData.storyboard in Resources */,
 				E62DED2B244091890034D701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,12 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E10764B2444ECC1005F5A44 /* PersonalDataVC.swift in Sources */,
 				E62DED28244091890034D701 /* ViewController.swift in Sources */,
 				3EABBE6924434BF100466AA5 /* Category.swift in Sources */,
 				E62DED24244091890034D701 /* AppDelegate.swift in Sources */,
+				3EABBE7C2444E61F00466AA5 /* AllergiesVC.swift in Sources */,
 				3EABBE6724434BC200466AA5 /* BreakfastCollectionViewCell.swift in Sources */,
 				3EABBE6524434B7D00466AA5 /* BreakfastViewController.swift in Sources */,
 				3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */,
+				3EABBE782444E5D700466AA5 /* ActivityVC.swift in Sources */,
 				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
 				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,
 				E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */,
@@ -233,6 +264,7 @@
 				E64B7DE024441DE40052C0DF /* ProfilePageVC.swift in Sources */,
 				E62DED26244091890034D701 /* SceneDelegate.swift in Sources */,
 				CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */,
+				3EABBE7E2444E7D500466AA5 /* ActivitiesTableViewCell.swift in Sources */,
 				E64B7DE2244424150052C0DF /* EditProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4Q5SFCC38;
 				INFOPLIST_FILE = "Arsa MC1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4Q5SFCC38;
 				INFOPLIST_FILE = "Arsa MC1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
