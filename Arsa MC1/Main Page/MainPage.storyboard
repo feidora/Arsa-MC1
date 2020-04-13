@@ -165,6 +165,16 @@
             </objects>
             <point key="canvasLocation" x="3971.0144927536235" y="444.64285714285711"/>
         </scene>
+        <!--ProfilePage-->
+        <scene sceneID="QcZ-x4-UI8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfilePage" id="nx9-Tj-Q0h" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="II0-Iw-VZQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xv-Yv-U3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4855" y="-648"/>
+        </scene>
         <!--Category MealVC-->
         <scene sceneID="YxW-0P-ldI">
             <objects>
@@ -242,6 +252,9 @@
                                 <state key="normal" title="Button" backgroundImage="person.circle" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nx9-Tj-Q0h" kind="show" id="9cw-4P-bnr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fullfiled/Daily Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7We-2p-0bf">
                                 <rect key="frame" x="20" y="230" width="214" height="24"/>
