@@ -1,21 +1,23 @@
 //
-//  CategoryMealVC.swift
-//  Arsa MC1
+//  ViewController.swift
+//  Another Nyoba MC1
 //
-//  Created by Zhafira Millenia on 12/04/20.
-//  Copyright © 2020 Feidora Nadia Putri. All rights reserved.
+//  Created by Zhafira Millenia on 09/04/20.
+//  Copyright © 2020 Zhafira Millenia. All rights reserved.
 //
 
 import UIKit
 
 
 class CategoryMealVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    //UITableViewController//
     
     var calories = ""
     var nama = ""
     @IBOutlet weak var helloNama: UILabel!
     @IBOutlet weak var fullfiledCalories: UILabel!
-    @IBAction func resetButton(_ sender: Any) {}
+    @IBAction func resetButton(_ sender: Any) {
+    }
     
     
     let cellColors = [UIColor(red: 0.67, green: 0.80, blue: 0.79, alpha: 1), UIColor(red:0.93, green: 0.78, blue: 0.37, alpha: 1), UIColor(red:0.92, green:0.54, blue:0.31, alpha:1.00)]
@@ -29,9 +31,13 @@ class CategoryMealVC: UIViewController, UITableViewDelegate, UITableViewDataSour
       override func viewDidLoad() {
           super.viewDidLoad()
         helloNama.text = "Hello, \(nama)!"
-        fullfiledCalories.text = "Fullfiled / \(calories) cal"
+        fullfiledCalories.text = "Fullfiled / \(calories)"
+  //        self.tableView.rowHeight = 120
       }
     
+//    func tableView(_ tableView: UITableView, numberOfSections section: Int) -> Int {
+//        return 8
+//    }
     
     func numberOfSections(in tableView:UITableView) -> Int {
         return 1
@@ -49,10 +55,16 @@ class CategoryMealVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = category.mealsType
         cell.detailTextLabel?.text = category.mealsName
         cell.backgroundColor = cellColor
-//      cell.imageView?.image = UIImage(named: category.mealsKeteranganImages)
+//        cell.imageView?.image = UIImage(named: category.mealsKeteranganImages)
         return cell
     }
+//
+//   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//    return "Sect-- \(section)"
+//    }
     
+    var selectedMealsType = ["Breakfast Meal", "Lunch Meal", "Dinner Meal"]
+      
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            
