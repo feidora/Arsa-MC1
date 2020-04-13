@@ -21,6 +21,7 @@
 		E62DED2B244091890034D701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62DED29244091890034D701 /* Main.storyboard */; };
 		E62DED2D244091890034D701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62DED2C244091890034D701 /* Assets.xcassets */; };
 		E62DED30244091890034D701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62DED2E244091890034D701 /* LaunchScreen.storyboard */; };
+		E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,9 @@
 		E62DED2C244091890034D701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E62DED2F244091890034D701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E62DED31244091890034D701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsVC.swift; sourceTree = "<group>"; };
+		E64B7DD6244411B50052C0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MenuDetailsVC.storyboard; sourceTree = "<group>"; };
+		E64B7DD7244411B50052C0DF /* MenuDetailsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuDetailsVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				3EABBE6424434B7D00466AA5 /* BreakfastViewController.swift */,
 				3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */,
 				3EABBE6A24434C1000466AA5 /* MainPage.storyboard */,
+				E64B7DD3244411B50052C0DF /* Menu Details */,
+				E64B7DD7244411B50052C0DF /* MenuDetailsVC.storyboard */,
+				E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */,
 			);
 			path = "Main Page";
 			sourceTree = "<group>";
@@ -97,6 +104,23 @@
 				3EABBE5C24434A4400466AA5 /* Main Page */,
 			);
 			path = "Arsa MC1";
+			sourceTree = "<group>";
+		};
+		E64B7DD3244411B50052C0DF /* Menu Details */ = {
+			isa = PBXGroup;
+			children = (
+				E64B7DD4244411B50052C0DF /* MC1 */,
+			);
+			name = "Menu Details";
+			path = "../../../../MC1/Menu Details";
+			sourceTree = "<group>";
+		};
+		E64B7DD4244411B50052C0DF /* MC1 */ = {
+			isa = PBXGroup;
+			children = (
+				E64B7DD5244411B50052C0DF /* MenuDetailsVC.storyboard */,
+			);
+			path = MC1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +203,7 @@
 				3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */,
 				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
 				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,
+				E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */,
 				E62DED26244091890034D701 /* SceneDelegate.swift in Sources */,
 				CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */,
 			);
@@ -201,6 +226,14 @@
 				E62DED2F244091890034D701 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E64B7DD5244411B50052C0DF /* MenuDetailsVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64B7DD6244411B50052C0DF /* Base */,
+			);
+			name = MenuDetailsVC.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
