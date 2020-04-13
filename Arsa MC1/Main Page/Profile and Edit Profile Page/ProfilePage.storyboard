@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="emR-0n-HrF" customClass="ProfilePageVC" customModule="Arsa_MC1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZAO-Ir-SHT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NkV-29-cgC">
@@ -84,6 +84,11 @@
                                     <segue destination="Wev-E0-99m" kind="show" id="h3Q-Ie-aXS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFl-tO-LAi">
+                                <rect key="frame" x="20" y="90" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu Details"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9j9-b9-6s1"/>
@@ -124,7 +129,7 @@
             <objects>
                 <viewController id="Wev-E0-99m" customClass="EditProfileVC" customModule="Arsa_MC1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mnl-Rz-5qX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FrQ-X8-v4c">
@@ -197,7 +202,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yyyy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uk0-aM-cxd">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uk0-aM-cxd">
                                 <rect key="frame" x="21" y="477" width="256" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -210,7 +215,7 @@
                                 <state key="normal" title="Save Changes"/>
                                 <connections>
                                     <action selector="saveChangesButtonPressed:" destination="Wev-E0-99m" eventType="touchUpInside" id="1GW-IM-mxB"/>
-                                    <segue destination="mCQ-B0-xJ1" kind="unwind" unwindAction="unwindToProfile:" id="5N7-2Z-3Vv"/>
+                                    <segue destination="emR-0n-HrF" kind="show" identifier="editProfileSegue" id="EJd-Sw-xjj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -219,14 +224,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="UbW-7V-p2i"/>
                     <connections>
+                        <outlet property="ageTextField" destination="uk0-aM-cxd" id="TdI-Sc-dEz"/>
+                        <outlet property="heightTextField" destination="nP6-Y8-3EN" id="IlF-yj-2Ab"/>
                         <outlet property="imageEditProfile" destination="FrQ-X8-v4c" id="bFm-gU-i6F"/>
+                        <outlet property="nameTextField" destination="iqM-aR-hBD" id="kfj-fI-U7K"/>
+                        <outlet property="weightTextField" destination="Nct-iS-Cm2" id="QwW-Rt-c3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZV-gu-roO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="mCQ-B0-xJ1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="-210.26785714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EJd-Sw-xjj"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
 </document>
