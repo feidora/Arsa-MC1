@@ -86,7 +86,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Menu Details"/>
                                 <connections>
-                                    <action selector="menuDetailsPressed:" destination="emR-0n-HrF" eventType="touchUpInside" id="Ogd-EF-fS4"/>
+                                    <segue destination="BYL-oz-iuo" kind="show" id="E51-mc-ZBJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NkV-29-cgC">
@@ -109,16 +109,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mys-qK-7N4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="534.78260869565224" y="-210.26785714285714"/>
-        </scene>
-        <!--MenuDetailsVC-->
-        <scene sceneID="zLG-Qn-dqQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MenuDetailsVC" id="FmI-SN-qt0" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="D4h-GI-3w9"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XG4-me-nPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="535" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k6j-H9-Xf7">
@@ -249,12 +239,217 @@
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="-210.26785714285714"/>
         </scene>
+        <!--Menu Details Copy2VC-->
+        <scene sceneID="2T8-yo-YT0">
+            <objects>
+                <viewController storyboardIdentifier="MenuDetailsVC" id="BYL-oz-iuo" customClass="MenuDetailsCopy2VC" customModule="Arsa_MC1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ri9-mV-NhN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veh-IS-NxW">
+                                <rect key="frame" x="0.0" y="45" width="414" height="2000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LYe-dx-DY2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roasted pepper and baked eggs" translatesAutoresizingMaskIntoConstraints="NO" id="bNP-lx-T5l">
+                                                <rect key="frame" x="132" y="0.0" width="150" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roasted Pepper Baked Eggs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-0w-uBg">
+                                                <rect key="frame" x="25" y="168" width="367" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                                <color key="textColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you’re allergic to the ingredients below, please be careful. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wI-JS-ewi">
+                                                <rect key="frame" x="77" y="276" width="315" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX7-Vk-VvE">
+                                                <rect key="frame" x="25" y="365" width="83" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwL-ef-xdN">
+                                                <rect key="frame" x="25" y="393" width="272" height="220"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">1/2 batch roasted red pepper sauce 4 eggs
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="4 thick slices of ciabatta Olive oil 1 garlic clove Chopped parsley">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 serves 271 kcal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUf-MO-cBW">
+                                                <rect key="frame" x="25" y="212" width="175" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89A-Gy-QpP">
+                                                <rect key="frame" x="305" y="393" width="78" height="220"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Label">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5N-0L-ngI">
+                                                <rect key="frame" x="280" y="365" width="112" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nutrition information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-0K-dxX">
+                                                <rect key="frame" x="25" y="1340" width="170" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWl-Io-Y4K">
+                                                <rect key="frame" x="277" y="1368" width="98" height="137"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="10g 2g 30g 10g 5g 13g 0.5g">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq0-s2-7vy">
+                                                <rect key="frame" x="25" y="1368" width="73" height="137"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Fat Saturates Carbs Sugars Fibre Protein Salt">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-qX-aXd">
+                                                <rect key="frame" x="370" y="8" width="22" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="love-1"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0UD-64-gvZ">
+                                                <rect key="frame" x="25" y="286" width="44" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.87232810260000004" green="0.55572605129999997" blue="0.36073690650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRT-6S-RKz">
+                                                <rect key="frame" x="25" y="652" width="98" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-0k-akr">
+                                                <rect key="frame" x="25" y="680" width="367" height="652"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">1. Heat oven to 180C/160C fan/gas 4. 2. Divide ½ batch roasted red pepper sauce between four small baking dishes. 3. Take 4 eggs and break 1 into each dish. Bake for 7-10 mins until the whites are set and the yolks are still runny.
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">4. Put 4 thick slices of ciabatta on a baking tray, drizzle with olive oil, rub with 1 garlic clove and cook in the oven until lightly toasted. 5. Sprinkle the eggs with chopped parsley and black pepper, and serve with the toasted ciabatta.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="6H4-zz-cUS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vqR-cG-SeP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="exN-nF-YCv"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="414" height="2000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="veh-IS-NxW" firstAttribute="leading" secondItem="DjZ-Up-Fwh" secondAttribute="leading" id="1kp-i5-v9q"/>
+                            <constraint firstItem="veh-IS-NxW" firstAttribute="bottom" secondItem="DjZ-Up-Fwh" secondAttribute="bottom" id="RX1-EC-SzQ"/>
+                            <constraint firstItem="veh-IS-NxW" firstAttribute="trailing" secondItem="DjZ-Up-Fwh" secondAttribute="trailing" id="fcH-he-3gq"/>
+                            <constraint firstItem="veh-IS-NxW" firstAttribute="top" secondItem="DjZ-Up-Fwh" secondAttribute="top" id="uM2-YI-yVm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DjZ-Up-Fwh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fqq-Sx-9cw"/>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="caloriesIngredientLabel" destination="89A-Gy-QpP" id="suh-lb-z30"/>
+                        <outlet property="kindOfNutrition" destination="Sq0-s2-7vy" id="pPb-Ll-MBI"/>
+                        <outlet property="menuDetailsImage" destination="bNP-lx-T5l" id="H8a-0z-gVk"/>
+                        <outlet property="menuIngredientLabel" destination="nwL-ef-xdN" id="DFj-Av-WJs"/>
+                        <outlet property="menuInstructionsLabel" destination="rQ2-0k-akr" id="CrF-EK-UrE"/>
+                        <outlet property="menuNameLabel" destination="AJa-0w-uBg" id="E6k-8w-JN7"/>
+                        <outlet property="menuNutritionLabel" destination="yWl-Io-Y4K" id="dbA-5p-8rj"/>
+                        <outlet property="menuPortionLabel" destination="jUf-MO-cBW" id="bf0-K9-Yd8"/>
+                        <outlet property="nutritionInformationLabel" destination="8H1-0K-dxX" id="RkP-3c-cbc"/>
+                        <outlet property="totalCaloriesLabel" destination="j5N-0L-ngI" id="1TO-gR-AOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZV-zt-Jr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153.6231884057975" y="158.70535714285714"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="h3Q-Ie-aXS"/>
         <segue reference="EJd-Sw-xjj"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.8862745098" green="0.46274509800000002" blue="0.20784313730000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
     <resources>
+        <image name="Roasted pepper and baked eggs" width="128" height="128"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="love-1" width="22" height="20"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

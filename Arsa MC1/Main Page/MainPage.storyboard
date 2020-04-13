@@ -72,6 +72,7 @@
                         <outlet property="heightTF" destination="BeK-qT-oDL" id="vaj-zh-Blq"/>
                         <outlet property="namaTF" destination="oub-30-H3m" id="M1W-DZ-W6t"/>
                         <outlet property="weightTF" destination="QR3-vI-DbO" id="HUs-er-7Nv"/>
+                        <segue destination="hRM-9B-9yD" kind="presentation" id="7PF-LZ-k1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQf-B5-ocR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -730,6 +731,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgK-e0-LHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6937.68115942029" y="146.65178571428569"/>
+        </scene>
+        <!--ProfilePage-->
+        <scene sceneID="11q-5b-K1J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfilePage" id="hRM-9B-9yD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0J6-xm-g2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3970" y="-622"/>
         </scene>
     </scenes>
     <resources>
