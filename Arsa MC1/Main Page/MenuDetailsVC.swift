@@ -29,43 +29,9 @@ class MenuDetailsVC: UIViewController {
         
     }
     
-    // Lunch
-    func SpicyKimchiRamen() {
-        menuNameLabel.text = "Spicy Kimchi Ramen"
-        menuPortionLabel.text = "1 bowl \n308kcal"
-        menuIngredientLabel.text = "6-8 servings \n1 pound Boneless Chicken \n4 Cloves Garlic, grated \n1 tbsp Ginger, grated \n2 tbsp Soy Sauce \n1 tsp Sesame Oil \n1 Onion, finely chopped \n16 ounces Kimchi, squeezed dry \n3 tbsp Gochujang \n1 tbsp Gochugaru \n8 cups Chicken or Vegetable Broth \n4 cups Water \n6 packages Instant ramen noodles \n6 to 8 poached eggs \n2 bunches of scallions, chopped"
-        caloriesIngredientLabel.text = "120kcal \n32kcal \n20kcal \n22kcal \n120kcal \n32kcal \n 140kcal \n135kcal \n45kcal \n72kcal \n0kcal \n1200kcal"
-        menuInstructionsLabel.text = "1. Place chicken, garlic, ginger, soy sauce, and sesame oil in a small mixing bowl and stir to combine. Let marinate for 15 minutes. \n2. Add chicken and marinade to a heavy-bottom soup pot over medium-low heat. Let cook, stirring occasionally, for 8-10 minutes. Add onion to pot and cook, stirring occasionally, 5-8 minutes, or until onion has softened. \n3. Turn up heat to medium high and add kimchi (no juice), gochujang, and gochugaru. Cook, stirring frequently, for 2 minutes. Add kimchi juice, broth, and water, stir to combine, and lower heat to maintain a simmer for 20 minutes. If you have time to spare, feel free to let simmer for a bit longer. \n4. During the last 2 to 3 minutes of the ramen broth simmering, cook ramen noodles in boiling water until just cooked through (if you cook too long, they will turn to mush). \n5. Divide ramen broth between 6 to 8 bowls. Gently lower in ramen noodles into each bowl. Top with a poached egg and a sprinkle of scallions. Dig in, slurp like crazy, and devour."
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
-
-    func PaleoGadoGado() {
-        menuNameLabel.text = "Paleo Gado Gado"
-        menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
-        menuIngredientLabel.text = "1 Cauliflower \n400 g Green Beans \n200 g Chicken Filet \n75 g Bean Sprouts \n1 Mango in cubes \n1/2 Cucumber in small cubes \n1 Broccoli \n3 Cooked Eggs \nSate sauce ingredients \n170 g Almond Butter \n1 Onion finely sliced \n2 Cloves of garlic sliced \n1 tsp Shrimp Paste \n1 tsp Ginger \n1 can of Coconut Milk"
-        caloriesIngredientLabel.text = "120kcal \n133kcal \n17kcal \n288kcal \n200kcal \n130kcal"
-        menuInstructionsLabel.text = "1. Quickly cook the broccoli and the green beans in boiling water. The broccoli needs no more than 2-3 minutes. The beans need just a bit longer. It needs to be cooked but with a good bite. \n2. Make the sauce by adding a bit of coconut oil into a sauce pan. Bake the onions until translucent. Add the garlic and bake for a minute. \n3. Add the shrimp paste and the ginger. Bake this for a minute or so and add the almond butter. \n4. Add the coconut milk last and stir until it becomes a smooth sauce. Season with salt and pepper to taste \n5. Take two large bowls and make a base with the cauliflower rice. Divide the veggies on top, the chicken and the mango. Add a spoonful of the sauce  on top and add the eggs last. \n6.Traditionally gado gado is served luke warm or cold. \n7. Serve with the remaining sate sauce. \n8. Enjoy your meal!"
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
-    
-    func PrimaveraPizza() {
-        menuNameLabel.text = "Primavera Pizza"
-        menuPortionLabel.text = ""
-        menuIngredientLabel.text = "80 g Strong White Flour \n80 g Strong Brown Flour \n1 tsp Fast Acting Yeast \n100-120ml Warm Water \nPinch of Salt \n1 tin of chopped Tomatoes \n2 tbsp Tomato Puree \n1 tsp Dried Oregano \n70 g Cooked Peas \n125 g Asparagus \n80 g Courgette \n125 g Light Mozzarella Cheese \n45 g Extra Mature Cheddar grated"
-        totalCaloriesLabel.isHidden = true
-        caloriesIngredientLabel.isHidden = true
-        menuInstructionsLabel.text = "1. Preheat the oven to 220C. \n2. Mix the flours, yeast and a pinch of salt in a bowl. Pour in the warm water and mix to a soft dough. Knead for 5 mins. Then cut in half and roll out into two pizza bases approximately 25cm diameter. Place onto baking sheets covered in oiled baking paper and set aside for 20 minutes. \n3. Meanwhile in bowl mix the chopped tomatoes, tomato puree and oregano. \n4. When you are ready to assemble your pizza add some of the tomato sauce to the bases. Sprinkle with the vegetables and top with cheese. \n5. Cook for 15-20 minutes or until golden \n6. Enjoy your meal!"
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
-    
     // Breakfast
     func PumpkinSoup() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
         menuNameLabel.text = "Pumpkin Soup"
         menuPortionLabel.text = "1 bowl / 493gr \n308kcal"
         menuIngredientLabel.text = "230 g Hokkaido Pumpkin \n65 g  Potatoes \n40 g 1/2 Onion \n20 g Fresh Ginger \n1 tsp Canola Oil \n200 ml Vegetable Broth \n125 ml Coconut Milk \n140 g Apple \nSalt and Pepper"
@@ -76,6 +42,7 @@ class MenuDetailsVC: UIViewController {
     }
     
     func DakJuk() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
         menuNameLabel.text = "Dak Juk"
         menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
         menuIngredientLabel.text = "215 g Short Grain Rice \n1.3 kg Whole Chicken \n8 Medium cloves garlic, 6 Whole and 2 Finely minced, divided \n10 g Fresh Ginger \n3 Scallions, ends trimmed, white and light green parts reserved for broth, green tops sliced thin on a bias, divided \n25 ml Toasted Sesame Oil \n115 g Carrot \n160 g White Onion \n200 g Zucchini"
@@ -87,6 +54,7 @@ class MenuDetailsVC: UIViewController {
     }
     
     func PastaCarbonara() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
         menuNameLabel.text = "Pasta Carbonara"
         menuPortionLabel.text = "1 plate \n337kcal"
         menuIngredientLabel.text = "1 tbsp Extra virgin olive oil \n1/2 pound Pancetta \n1-2 Garlic cloves, minced, \n3-4 Whole Eggs \n1 cup Grated Parmesan \n1 pound Spaghetti Pasta \nSalt and black pepper"
@@ -97,8 +65,47 @@ class MenuDetailsVC: UIViewController {
         kindOfNutrition.isHidden = true
     }
     
+    // Lunch
+    func SpicyKimchiRamen() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
+        menuNameLabel.text = "Spicy Kimchi Ramen"
+        menuPortionLabel.text = "1 bowl \n308kcal"
+        menuIngredientLabel.text = "6-8 servings \n1 pound Boneless Chicken \n4 Cloves Garlic, grated \n1 tbsp Ginger, grated \n2 tbsp Soy Sauce \n1 tsp Sesame Oil \n1 Onion, finely chopped \n16 ounces Kimchi, squeezed dry \n3 tbsp Gochujang \n1 tbsp Gochugaru \n8 cups Chicken or Vegetable Broth \n4 cups Water \n6 packages Instant ramen noodles \n6 to 8 poached eggs \n2 bunches of scallions, chopped"
+        caloriesIngredientLabel.text = "120kcal \n32kcal \n20kcal \n22kcal \n120kcal \n32kcal \n 140kcal \n135kcal \n45kcal \n72kcal \n0kcal \n1200kcal"
+        menuInstructionsLabel.text = "1. Place chicken, garlic, ginger, soy sauce, and sesame oil in a small mixing bowl and stir to combine. Let marinate for 15 minutes. \n2. Add chicken and marinade to a heavy-bottom soup pot over medium-low heat. Let cook, stirring occasionally, for 8-10 minutes. Add onion to pot and cook, stirring occasionally, 5-8 minutes, or until onion has softened. \n3. Turn up heat to medium high and add kimchi (no juice), gochujang, and gochugaru. Cook, stirring frequently, for 2 minutes. Add kimchi juice, broth, and water, stir to combine, and lower heat to maintain a simmer for 20 minutes. If you have time to spare, feel free to let simmer for a bit longer. \n4. During the last 2 to 3 minutes of the ramen broth simmering, cook ramen noodles in boiling water until just cooked through (if you cook too long, they will turn to mush). \n5. Divide ramen broth between 6 to 8 bowls. Gently lower in ramen noodles into each bowl. Top with a poached egg and a sprinkle of scallions. Dig in, slurp like crazy, and devour."
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+
+    func PaleoGadoGado() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
+        menuNameLabel.text = "Paleo Gado Gado"
+        menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
+        menuIngredientLabel.text = "1 Cauliflower \n400 g Green Beans \n200 g Chicken Filet \n75 g Bean Sprouts \n1 Mango in cubes \n1/2 Cucumber in small cubes \n1 Broccoli \n3 Cooked Eggs \nSate sauce ingredients \n170 g Almond Butter \n1 Onion finely sliced \n2 Cloves of garlic sliced \n1 tsp Shrimp Paste \n1 tsp Ginger \n1 can of Coconut Milk"
+        caloriesIngredientLabel.text = "120kcal \n133kcal \n17kcal \n288kcal \n200kcal \n130kcal"
+        menuInstructionsLabel.text = "1. Quickly cook the broccoli and the green beans in boiling water. The broccoli needs no more than 2-3 minutes. The beans need just a bit longer. It needs to be cooked but with a good bite. \n2. Make the sauce by adding a bit of coconut oil into a sauce pan. Bake the onions until translucent. Add the garlic and bake for a minute. \n3. Add the shrimp paste and the ginger. Bake this for a minute or so and add the almond butter. \n4. Add the coconut milk last and stir until it becomes a smooth sauce. Season with salt and pepper to taste \n5. Take two large bowls and make a base with the cauliflower rice. Divide the veggies on top, the chicken and the mango. Add a spoonful of the sauce  on top and add the eggs last. \n6.Traditionally gado gado is served luke warm or cold. \n7. Serve with the remaining sate sauce. \n8. Enjoy your meal!"
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+    
+    func PrimaveraPizza() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
+        menuNameLabel.text = "Primavera Pizza"
+        menuPortionLabel.text = ""
+        menuIngredientLabel.text = "80 g Strong White Flour \n80 g Strong Brown Flour \n1 tsp Fast Acting Yeast \n100-120ml Warm Water \nPinch of Salt \n1 tin of chopped Tomatoes \n2 tbsp Tomato Puree \n1 tsp Dried Oregano \n70 g Cooked Peas \n125 g Asparagus \n80 g Courgette \n125 g Light Mozzarella Cheese \n45 g Extra Mature Cheddar grated"
+        totalCaloriesLabel.isHidden = true
+        caloriesIngredientLabel.isHidden = true
+        menuInstructionsLabel.text = "1. Preheat the oven to 220C. \n2. Mix the flours, yeast and a pinch of salt in a bowl. Pour in the warm water and mix to a soft dough. Knead for 5 mins. Then cut in half and roll out into two pizza bases approximately 25cm diameter. Place onto baking sheets covered in oiled baking paper and set aside for 20 minutes. \n3. Meanwhile in bowl mix the chopped tomatoes, tomato puree and oregano. \n4. When you are ready to assemble your pizza add some of the tomato sauce to the bases. Sprinkle with the vegetables and top with cheese. \n5. Cook for 15-20 minutes or until golden \n6. Enjoy your meal!"
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+    
     // Dinner
     func MediterraneanCouscous() {
+        menuDetailsImage.image = #imageLiteral(resourceName: <#T##String#>)
         menuNameLabel.text = "Mediterranean Couscous Bowls"
         menuPortionLabel.text = "1 plate \n580kcal"
         menuIngredientLabel.text = "1 unit Bell Pepper \n4 ounce Grape Tomatoes \n1/4 ounce Dill \n4 tbsp Sour Cream \n1/2 cup Couscous \n1 tsp Smoked Paprika \n1 tbsp Turkish Spice Blend \n1 unit Cucumber \n1 unit Lemon \n1 unit Vegetable Broth \n4 tbsp Sabra Classic Hummus \n1/2 cup Feta Cheese \n1 tbsp Olive Oil \n1 tbsp Butter \nSalt and Pepper"
