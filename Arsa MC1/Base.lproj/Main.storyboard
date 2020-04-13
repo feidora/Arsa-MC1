@@ -33,14 +33,22 @@
                                 <rect key="frame" x="71" y="482" width="312" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-nP-yoT">
+                                <rect key="frame" x="343" y="79" width="36" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.6588235294" green="0.2666666667" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqG-ig-zTl">
-                                <rect key="frame" x="63" y="571" width="288" height="116"/>
+                                <rect key="frame" x="63" y="579" width="288" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Mantaining food intake does not exceed the calories needed. (Psst, this app is for ladies only ">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.56980415239726023" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="15" name="HiraginoSans-W3"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -54,7 +62,7 @@
                                     <fragment content=")">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.56980415239726023" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="15" name="HiraginoSans-W3"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -62,14 +70,6 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-nP-yoT">
-                                <rect key="frame" x="343" y="79" width="35" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Skip">
-                                    <color key="titleColor" red="0.6588235294" green="0.2666666667" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -102,7 +102,7 @@
                                     <fragment content="Food recipes that are easy to make but healthy and delicious">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.56980415239726023" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="15" name="HiraginoSans-W3"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -119,20 +119,12 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ego-qa-2Gp">
-                                <rect key="frame" x="352" y="76" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="tessst"/>
-                                <connections>
-                                    <segue destination="X16-7e-WOC" kind="show" id="G5n-d2-AaR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" springLoaded="YES" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcO-dl-Zvo">
                                 <rect key="frame" x="49" y="760" width="323" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87232810260000004" green="0.55572605129999997" blue="0.36073690650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
@@ -140,6 +132,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="X16-7e-WOC" kind="show" id="UxK-2r-jhO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -150,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="2600" y="134.59821428571428"/>
         </scene>
-        <!--navControllerMP-->
+        <!--navController1-->
         <scene sceneID="hmq-1K-lVf">
             <objects>
-                <viewControllerPlaceholder storyboardName="MainPage" referencedIdentifier="navControllerMP" id="X16-7e-WOC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="PersonalData" referencedIdentifier="navController1" id="X16-7e-WOC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="63V-W6-6Y0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj7-lt-put" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

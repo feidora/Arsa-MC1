@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E10764B2444ECC1005F5A44 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */; };
 		3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */; };
 		3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */; };
 		3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */; };
@@ -18,7 +19,6 @@
 		3EABBE732444DE9100466AA5 /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE722444DE9100466AA5 /* Gaegu-Light.ttf */; };
 		3EABBE752444E52E00466AA5 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE742444E52E00466AA5 /* PersonalData.storyboard */; };
 		3EABBE782444E5D700466AA5 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE772444E5D700466AA5 /* ActivityVC.swift */; };
-		3EABBE7A2444E5F700466AA5 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE792444E5F700466AA5 /* PersonalDataVC.swift */; };
 		3EABBE7C2444E61F00466AA5 /* AllergiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */; };
 		3EABBE7E2444E7D500466AA5 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */; };
 		CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA6DEE02442047E009531C6 /* PageViewController.swift */; };
@@ -35,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		3EABBE5D24434AE900466AA5 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
 		3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesPopUpVC.swift; sourceTree = "<group>"; };
 		3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealVC.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		3EABBE722444DE9100466AA5 /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
 		3EABBE742444E52E00466AA5 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
 		3EABBE772444E5D700466AA5 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
-		3EABBE792444E5F700466AA5 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesVC.swift; sourceTree = "<group>"; };
 		3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		CAA6DEE02442047E009531C6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3EABBE742444E52E00466AA5 /* PersonalData.storyboard */,
-				3EABBE792444E5F700466AA5 /* PersonalDataVC.swift */,
 				3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */,
+				3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */,
 				3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */,
 				3EABBE772444E5D700466AA5 /* ActivityVC.swift */,
 			);
@@ -244,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E10764B2444ECC1005F5A44 /* PersonalDataVC.swift in Sources */,
 				E62DED28244091890034D701 /* ViewController.swift in Sources */,
 				3EABBE6924434BF100466AA5 /* Category.swift in Sources */,
 				E62DED24244091890034D701 /* AppDelegate.swift in Sources */,
@@ -251,7 +252,6 @@
 				3EABBE6724434BC200466AA5 /* BreakfastCollectionViewCell.swift in Sources */,
 				3EABBE6524434B7D00466AA5 /* BreakfastViewController.swift in Sources */,
 				3EABBE6324434B3300466AA5 /* CategoryMealVC.swift in Sources */,
-				3EABBE7A2444E5F700466AA5 /* PersonalDataVC.swift in Sources */,
 				3EABBE782444E5D700466AA5 /* ActivityVC.swift in Sources */,
 				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
 				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,

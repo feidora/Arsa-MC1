@@ -9,9 +9,8 @@
 import UIKit
 
 class PersonalDataVC: UIViewController {
-
-        
-        @IBOutlet weak var continueButton: UIButton!
+    
+     @IBOutlet weak var continueButton: UIButton!
         @IBOutlet weak var nameLabel: UILabel!
         @IBOutlet weak var nameTextField: UITextField!
         @IBOutlet weak var heightWeightLabel: UILabel!
@@ -23,7 +22,15 @@ class PersonalDataVC: UIViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-    }
-        
-    }
+            
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
 
+                        view.addGestureRecognizer(tap)
+                    }
+
+                
+                    @objc func dismissKeyboard() {
+                    
+                        view.endEditing(true)
+            }
+    }
