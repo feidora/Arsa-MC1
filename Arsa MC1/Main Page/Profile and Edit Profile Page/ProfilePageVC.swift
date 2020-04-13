@@ -37,10 +37,14 @@ class ProfilePageVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameLabelPP.text = "Feidora"
+              heightWeightLabelPP.text = "150 cm / 43 kg"
+              ageLabelPP.text = "20"
+        
         // Do any additional setup after loading the view.
-        nameLabelPP.text = changedName
-        heightWeightLabelPP.text = "\(changedHeight) / \(changedWeight)"
-        ageLabelPP.text = changedAge
+//        nameLabelPP.text = changedName
+//        heightWeightLabelPP.text = "\(changedHeight) / \(changedWeight)"
+//        ageLabelPP.text = changedAge
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -56,4 +60,10 @@ class ProfilePageVC: UIViewController, UITableViewDataSource, UITableViewDelegat
 //    }
     @IBAction func unwindToProfile(_ sender: UIStoryboardSegue) {}
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the Navigation Bar
+       self.navigationController?.setNavigationBarHidden(true, animated: animated)
+     
+    }
 }

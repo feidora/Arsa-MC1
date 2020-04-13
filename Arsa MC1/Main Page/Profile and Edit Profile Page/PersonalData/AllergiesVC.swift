@@ -87,6 +87,12 @@ class AllergiesVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
                destination.nama = "\(self.nama)"
                }}
      
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the Navigation Bar
+       self.navigationController?.setNavigationBarHidden(false, animated: animated)
+     
+    }
         
     
 }

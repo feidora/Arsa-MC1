@@ -41,9 +41,27 @@ class EditProfileVC: UIViewController {
         newAge.changedAge = ageTextField.text!
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          // Hide the Navigation Bar
+          self.navigationController?.navigationBar.tintColor = UIColor(red:0.89, green:0.46, blue:0.33, alpha:1.00)
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+
+      }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
 
+                    view.addGestureRecognizer(tap)
+                }
+
+            
+                @objc func dismissKeyboard() {
+                
+                    view.endEditing(true)
+        
         // Date PickerView
 //        datePicker = UIDatePicker()
 //        datePicker.datePickerMode = .date

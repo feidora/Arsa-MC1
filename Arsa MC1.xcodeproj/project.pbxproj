@@ -418,14 +418,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4Q5SFCC38;
+				DEVELOPMENT_TEAM = 5Q3W362QW2;
 				INFOPLIST_FILE = "Arsa MC1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AppleDeveloperAcademyBinus.Arsa-MC1";
+				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,14 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4Q5SFCC38;
+				DEVELOPMENT_TEAM = 5Q3W362QW2;
 				INFOPLIST_FILE = "Arsa MC1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AppleDeveloperAcademyBinus.Arsa-MC1";
+				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

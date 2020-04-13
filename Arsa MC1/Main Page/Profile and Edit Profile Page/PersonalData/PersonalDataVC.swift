@@ -24,6 +24,7 @@ class PersonalDataVC: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
+            
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
 
                         view.addGestureRecognizer(tap)
@@ -69,6 +70,13 @@ class PersonalDataVC: UIViewController {
                destination.nama = "\(self.namaField)"
                }}
      
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the Navigation Bar
+       self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.89, green:0.46, blue:0.33, alpha:1.00)
+
+    }
         
     }
 

@@ -25,7 +25,7 @@ class CaloriesPopUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelCalories.text = calories
+        labelCalories.text = " \(calories) cal"
 //        buttonOutlet.layer.cornerRadius = 70
 //        buttonOutlet.clipsToBounds = true
         

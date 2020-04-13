@@ -142,4 +142,12 @@ class MenuDetailsCopy2VC: UIViewController {
         menuNutritionLabel.text = "14g   \n84g  \n42g \n7g \n11g  \n15g \n25mg \n600mg"
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          // Hide the Navigation Bar
+          self.navigationController?.navigationBar.tintColor = UIColor(red:0.89, green:0.46, blue:0.33, alpha:1.00)
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+
+      }
 }

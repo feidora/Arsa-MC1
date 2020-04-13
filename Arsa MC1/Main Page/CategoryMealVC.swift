@@ -17,21 +17,24 @@ class CategoryMealVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var helloNama: UILabel!
     @IBOutlet weak var fullfiledCalories: UILabel!
     @IBAction func resetButton(_ sender: Any) {
+        fullfiledCalories.text = "0 / \(calories) cal"
     }
     
     
     let cellColors = [UIColor(red: 0.67, green: 0.80, blue: 0.79, alpha: 1), UIColor(red:0.93, green: 0.78, blue: 0.37, alpha: 1), UIColor(red:0.92, green:0.54, blue:0.31, alpha:1.00)]
     
     let meals = [
-        Category(mealsType: "Breakfast", mealsName: "Banana Milk", mealsCalories: "200cal", mealsKeteranganImages: ""),
-        Category(mealsType: "Lunch", mealsName: "Soto Ayam", mealsCalories: "430cal", mealsKeteranganImages: ""),
+        Category(mealsType: "Breakfast", mealsName: "Pumpkin Soup", mealsCalories: "298cal", mealsKeteranganImages: ""),
+        Category(mealsType: "Lunch", mealsName: "Add your lunch and see our food suggestions!", mealsCalories: "", mealsKeteranganImages: ""),
         Category(mealsType: "Dinner", mealsName: "Add your lunch and see our food suggestions!", mealsCalories: "", mealsKeteranganImages: "")
     ]
+    
+    var fullfiled: Int = 320
     
       override func viewDidLoad() {
           super.viewDidLoad()
         helloNama.text = "Hello, \(nama)!"
-        fullfiledCalories.text = "Fullfiled / \(calories)"
+        fullfiledCalories.text = "\(fullfiled) cal / \(calories) cal"
   //        self.tableView.rowHeight = 120
       }
     
