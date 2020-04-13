@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 class AllergiesVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
     let allergies = [
@@ -50,24 +51,42 @@ class AllergiesVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
         return allergies.count
     }
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var caloriesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        caloriesLabel.isHidden = true
+        nameLabel.isHidden = true
+        caloriesLabel.text = calories
+        nameLabel.text = nama
         allergiesTableView.delegate = self
         allergiesTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func continueToPopUp(_ sender: Any) {
+          
 
-    /*
-    // MARK: - Navigation
+        let passNama = storyboard?.instantiateViewController(withIdentifier: "CaloriesPopUp") as! CaloriesPopUpVC
+                          passNama.calories = "\(self.calories)"
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+                  performSegue(withIdentifier: "mainPage", sender: self)
+                  
+                      present(passNama, animated: true, completion: nil)
+      }
+      
+    var calories = ""
+    var nama = ""
+    
+ 
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+               if let destination = segue.destination as? CategoryMealVC {
+               destination.calories = "\(self.calories)"
+               destination.nama = "\(self.nama)"
+               }}
+     
+        
+    
 }

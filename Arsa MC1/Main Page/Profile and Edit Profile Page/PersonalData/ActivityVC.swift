@@ -9,6 +9,11 @@
 import UIKit
 
 class ActivityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var calories = ""
+    var nama = ""
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return activities.count
     }
@@ -42,10 +47,15 @@ class ActivityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 ]
     @IBOutlet weak var activitiesTableView: UITableView!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var caloriesLabel: UILabel!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
-    
-        
+        caloriesLabel.isHidden = true
+        nameLabel.isHidden = true
+        caloriesLabel.text = calories
+        nameLabel.text = nama
         activitiesTableView.delegate = self
         activitiesTableView.dataSource = self
 
@@ -56,6 +66,29 @@ class ActivityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.didReceiveMemoryWarning()
     }
     
+     
+                
+    //                present(passNama, animated: true, completion: nil)
+                
+            
+            
+        //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //        if let destination = segue.destination as? CaloriesPopUpVC {
+        //        destination.calories = "\(self.convert)"
+        //
+        //        }}
+            
+    @IBAction func continueToAllergies(_ sender: Any) {
+        
+         performSegue(withIdentifier: "toAllergies", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                   if let destination = segue.destination as? AllergiesVC {
+                   destination.calories = "\(self.calories)"
+                   destination.nama = "\(self.nama)"
+                   }}
+         
     
     /*
     // MARK: - Navigation

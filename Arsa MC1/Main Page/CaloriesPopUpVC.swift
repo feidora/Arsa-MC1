@@ -19,7 +19,9 @@ class CaloriesPopUpVC: UIViewController {
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var labelCalories: UILabel!
     
+    var nama = ""
     var calories: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

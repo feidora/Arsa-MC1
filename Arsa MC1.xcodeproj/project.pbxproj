@@ -102,8 +102,8 @@
 				3EABBE742444E52E00466AA5 /* PersonalData.storyboard */,
 				3EABBE7D2444E7D500466AA5 /* ActivitiesTableViewCell.swift */,
 				3E10764A2444ECC1005F5A44 /* PersonalDataVC.swift */,
-				3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */,
 				3EABBE772444E5D700466AA5 /* ActivityVC.swift */,
+				3EABBE7B2444E61F00466AA5 /* AllergiesVC.swift */,
 			);
 			path = PersonalData;
 			sourceTree = "<group>";
