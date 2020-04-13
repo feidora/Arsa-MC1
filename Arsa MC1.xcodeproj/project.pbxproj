@@ -14,6 +14,7 @@
 		3EABBE6724434BC200466AA5 /* BreakfastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */; };
 		3EABBE6924434BF100466AA5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6824434BF100466AA5 /* Category.swift */; };
 		3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EABBE6A24434C1000466AA5 /* MainPage.storyboard */; };
+		3EABBE6D2444A2B800466AA5 /* MenuDetailsCopyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBE6C2444A2B800466AA5 /* MenuDetailsCopyVC.swift */; };
 		CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA6DEE02442047E009531C6 /* PageViewController.swift */; };
 		E62DED24244091890034D701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED23244091890034D701 /* AppDelegate.swift */; };
 		E62DED26244091890034D701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DED25244091890034D701 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 		3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastCollectionViewCell.swift; sourceTree = "<group>"; };
 		3EABBE6824434BF100466AA5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		3EABBE6A24434C1000466AA5 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		3EABBE6C2444A2B800466AA5 /* MenuDetailsCopyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsCopyVC.swift; sourceTree = "<group>"; };
 		CAA6DEE02442047E009531C6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E62DED20244091890034D701 /* Arsa MC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arsa MC1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62DED23244091890034D701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				3EABBE5F24434B0D00466AA5 /* CaloriesPopUpVC.swift */,
 				3EABBE6224434B3300466AA5 /* CategoryMealVC.swift */,
 				3EABBE6424434B7D00466AA5 /* BreakfastViewController.swift */,
+				3EABBE6C2444A2B800466AA5 /* MenuDetailsCopyVC.swift */,
 				3EABBE6624434BC200466AA5 /* BreakfastCollectionViewCell.swift */,
 				3EABBE6A24434C1000466AA5 /* MainPage.storyboard */,
 				E64B7DD3244411B50052C0DF /* Menu Details */,
@@ -222,6 +225,7 @@
 				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
 				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,
 				E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */,
+				3EABBE6D2444A2B800466AA5 /* MenuDetailsCopyVC.swift in Sources */,
 				E64B7DE024441DE40052C0DF /* ProfilePageVC.swift in Sources */,
 				E62DED26244091890034D701 /* SceneDelegate.swift in Sources */,
 				CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */,
