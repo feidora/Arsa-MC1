@@ -216,6 +216,7 @@
                                 <state key="normal" title="Save Changes"/>
                                 <connections>
                                     <action selector="saveChangesButtonPressed:" destination="Wev-E0-99m" eventType="touchUpInside" id="1GW-IM-mxB"/>
+                                    <segue destination="mCQ-B0-xJ1" kind="unwind" unwindAction="unwindToProfile:" id="5N7-2Z-3Vv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -228,6 +229,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZV-gu-roO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mCQ-B0-xJ1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="-210.26785714285714"/>
         </scene>
