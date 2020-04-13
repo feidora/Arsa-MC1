@@ -23,11 +23,14 @@ class MenuDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(name)
         // Do any additional setup after loading the view.
         PrimaveraPizza()
         
     }
+    
+    var name = ""
+    var calories = ""
     
     // Breakfast
     func PumpkinSoup() {
