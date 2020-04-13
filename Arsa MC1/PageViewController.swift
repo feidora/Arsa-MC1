@@ -94,6 +94,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                                      direction: .forward,
                                      animated: true,
                                      completion: nil)
+                
+                
               }
     }
     

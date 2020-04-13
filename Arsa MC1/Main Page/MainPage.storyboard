@@ -47,7 +47,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="pGF-84-otb" kind="show" identifier="keMainPage" id="PpX-0n-int"/>
+                                    <action selector="continueButton:" destination="3bb-IN-8gf" eventType="touchUpInside" id="xLk-It-4Ba"/>
+                                    <segue destination="pGF-84-otb" kind="show" identifier="keMainPage" id="qPT-F7-RJN"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oub-30-H3m">
@@ -69,9 +70,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="u66-hq-RKu"/>
                     <connections>
-                        <outlet property="heightTF" destination="BeK-qT-oDL" id="tZ8-go-Czj"/>
-                        <outlet property="namaTF" destination="oub-30-H3m" id="b2D-ue-Hfu"/>
-                        <outlet property="weightTF" destination="QR3-vI-DbO" id="0ZO-Bn-TDf"/>
+                        <outlet property="heightTF" destination="BeK-qT-oDL" id="vaj-zh-Blq"/>
+                        <outlet property="namaTF" destination="oub-30-H3m" id="M1W-DZ-W6t"/>
+                        <outlet property="weightTF" destination="QR3-vI-DbO" id="HUs-er-7Nv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQf-B5-ocR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,7 +142,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="B5m-st-d4B" kind="unwind" unwindAction="unwindToMainPage:" id="KQU-uf-QOx"/>
+                                    <segue destination="B5m-st-d4B" kind="unwind" unwindAction="unwindToMainPage:" id="b5W-gd-Blf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxA-lx-A4K">
@@ -156,8 +157,8 @@
                         <viewLayoutGuide key="safeArea" id="hT9-8X-Mzm"/>
                     </view>
                     <connections>
-                        <outlet property="buttonOutlet" destination="gjY-xU-Ol8" id="Vc3-2w-fkT"/>
-                        <outlet property="labelCalories" destination="3og-jL-ecw" id="90W-rj-2cb"/>
+                        <outlet property="buttonOutlet" destination="gjY-xU-Ol8" id="ni0-G8-M4r"/>
+                        <outlet property="labelCalories" destination="3og-jL-ecw" id="uVW-XG-WZP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XdZ-yz-VfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -288,7 +289,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ses-Sg-eV9" kind="showDetail" id="3ru-xA-QMb"/>
+                                    <segue destination="ses-Sg-eV9" kind="showDetail" id="26D-pP-Huv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -297,9 +298,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="z2O-iH-BxX"/>
                     <connections>
-                        <outlet property="fullfiledCalories" destination="7We-2p-0bf" id="04g-9o-9iP"/>
-                        <outlet property="helloNama" destination="5EZ-aR-9de" id="zGx-hQ-BOl"/>
-                        <outlet property="tableView" destination="b6o-hF-YoC" id="ymf-Ss-Gug"/>
+                        <outlet property="fullfiledCalories" destination="7We-2p-0bf" id="doh-DA-XSX"/>
+                        <outlet property="helloNama" destination="5EZ-aR-9de" id="icf-Xy-drG"/>
+                        <outlet property="tableView" destination="b6o-hF-YoC" id="gp1-0q-DeO"/>
                         <segue destination="ey7-Ix-J34" kind="show" identifier="breakfastVC" id="xBz-50-gqF"/>
                     </connections>
                 </viewController>
