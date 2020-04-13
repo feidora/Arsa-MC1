@@ -84,6 +84,34 @@ class BreakfastViewController: UIViewController, UICollectionViewDelegate, UICol
         return BreakfastCollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+   //     let category = menuPagi[indexPath.row]
+    //    let recipes = storyboard?.instantiateViewController(withIdentifier: "MenuDetails") as? MenuDetailsVC
+      //  recipes?.name = category.breakfastFoodName
+        //recipes?.calories = category.breakfastFoodCalories
+        // self.navigationController?.pushViewController(recipes!, animated: true)
+//
+//        performSegue(withIdentifier: "keMainPage", sender: self)
+            
+    //        let recipes = storyboard?.instantiateViewController(withIdentifier: "MenuDetails") as! MenuDetailsVC
+      //   let category = menuPagi[indexPath.row]
+    //  recipes.calories = category.breakfastFoodCalories
+            
+        //        present(recipes, animated: true, completion: nil)
+            
+                  
+        }
+        
+    
+    
+    
+//
+//           override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+////                  if let destination = segue.destination as? CategoryMealVC {
+////                  destination.calories = "\(self.convert)"
+////                  destination.nama = "\(self.namaField)"
+//                  }}
     
        var tipeMakanan = [Makanan]()
        var category: String = ""
