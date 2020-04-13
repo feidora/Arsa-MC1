@@ -10,7 +10,7 @@
         <!--Menu DetailsVC-->
         <scene sceneID="eFs-n1-YyH">
             <objects>
-                <viewController id="NJK-Vt-QKS" customClass="MenuDetailsVC" customModule="MC1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuDetailsVC" id="NJK-Vt-QKS" customClass="MenuDetailsVC" customModule="MC1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V4x-LL-tbR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,13 +71,6 @@
                                                 <rect key="frame" x="25" y="212" width="175" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="􀁞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbF-KY-puv">
-                                                <rect key="frame" x="25" y="293" width="29" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -161,6 +154,16 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-yn-WWI">
+                                                <rect key="frame" x="370" y="8" width="22" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="love-1"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zCa-1o-OFP">
+                                                <rect key="frame" x="25" y="286" width="44" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.87232810260000004" green="0.55572605129999997" blue="0.36073690650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -203,10 +206,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esG-tq-kYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25515.942028985508" y="-587.27678571428567"/>
+            <point key="canvasLocation" x="-23695.652173913044" y="-587.27678571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="13M-lR-hBA">
+            <objects>
+                <navigationController storyboardIdentifier="navController2" automaticallyAdjustsScrollViewInsets="NO" id="Pj5-qn-QAp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wjl-aG-dhD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NJK-Vt-QKS" kind="relationship" relationship="rootViewController" id="34D-OR-Mtb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjq-as-o39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24605.797101449276" y="-587.27678571428567"/>
         </scene>
     </scenes>
     <resources>
         <image name="Roasted pepper and baked eggs" width="500" height="454"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="love-1" width="22" height="20"/>
     </resources>
 </document>

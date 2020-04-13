@@ -22,6 +22,9 @@
 		E62DED2D244091890034D701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62DED2C244091890034D701 /* Assets.xcassets */; };
 		E62DED30244091890034D701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62DED2E244091890034D701 /* LaunchScreen.storyboard */; };
 		E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */; };
+		E64B7DDE24441D360052C0DF /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B7DDD24441D360052C0DF /* ProfilePage.storyboard */; };
+		E64B7DE024441DE40052C0DF /* ProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B7DDF24441DE40052C0DF /* ProfilePageVC.swift */; };
+		E64B7DE2244424150052C0DF /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B7DE1244424150052C0DF /* EditProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsVC.swift; sourceTree = "<group>"; };
 		E64B7DD6244411B50052C0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MenuDetailsVC.storyboard; sourceTree = "<group>"; };
 		E64B7DD7244411B50052C0DF /* MenuDetailsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuDetailsVC.storyboard; sourceTree = "<group>"; };
+		E64B7DDD24441D360052C0DF /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
+		E64B7DDF24441DE40052C0DF /* ProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageVC.swift; sourceTree = "<group>"; };
+		E64B7DE1244424150052C0DF /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				E64B7DD3244411B50052C0DF /* Menu Details */,
 				E64B7DD7244411B50052C0DF /* MenuDetailsVC.storyboard */,
 				E64B7DD2244411B50052C0DF /* MenuDetailsVC.swift */,
+				E64B7DD9244412A50052C0DF /* Profile and Edit Profile Page */,
 			);
 			path = "Main Page";
 			sourceTree = "<group>";
@@ -121,6 +128,16 @@
 				E64B7DD5244411B50052C0DF /* MenuDetailsVC.storyboard */,
 			);
 			path = MC1;
+			sourceTree = "<group>";
+		};
+		E64B7DD9244412A50052C0DF /* Profile and Edit Profile Page */ = {
+			isa = PBXGroup;
+			children = (
+				E64B7DDD24441D360052C0DF /* ProfilePage.storyboard */,
+				E64B7DE1244424150052C0DF /* EditProfileVC.swift */,
+				E64B7DDF24441DE40052C0DF /* ProfilePageVC.swift */,
+			);
+			path = "Profile and Edit Profile Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +201,7 @@
 				3EABBE6B24434C1000466AA5 /* MainPage.storyboard in Resources */,
 				E62DED30244091890034D701 /* LaunchScreen.storyboard in Resources */,
 				E62DED2D244091890034D701 /* Assets.xcassets in Resources */,
+				E64B7DDE24441D360052C0DF /* ProfilePage.storyboard in Resources */,
 				E62DED2B244091890034D701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,8 +222,10 @@
 				3EABBE5E24434AE900466AA5 /* TextFieldVC.swift in Sources */,
 				3EABBE6024434B0D00466AA5 /* CaloriesPopUpVC.swift in Sources */,
 				E64B7DD8244411B50052C0DF /* MenuDetailsVC.swift in Sources */,
+				E64B7DE024441DE40052C0DF /* ProfilePageVC.swift in Sources */,
 				E62DED26244091890034D701 /* SceneDelegate.swift in Sources */,
 				CAA6DEE12442047E009531C6 /* PageViewController.swift in Sources */,
+				E64B7DE2244424150052C0DF /* EditProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

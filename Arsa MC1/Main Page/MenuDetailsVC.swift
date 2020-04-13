@@ -23,49 +23,18 @@ class MenuDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(name)
         // Do any additional setup after loading the view.
         PrimaveraPizza()
         
     }
     
-    // Lunch
-    func SpicyKimchiRamen() {
-        menuNameLabel.text = "Spicy Kimchi Ramen"
-        menuPortionLabel.text = "1 bowl \n308kcal"
-        menuIngredientLabel.text = "6-8 servings \n1 pound Boneless Chicken \n4 Cloves Garlic, grated \n1 tbsp Ginger, grated \n2 tbsp Soy Sauce \n1 tsp Sesame Oil \n1 Onion, finely chopped \n16 ounces Kimchi, squeezed dry \n3 tbsp Gochujang \n1 tbsp Gochugaru \n8 cups Chicken or Vegetable Broth \n4 cups Water \n6 packages Instant ramen noodles \n6 to 8 poached eggs \n2 bunches of scallions, chopped"
-        caloriesIngredientLabel.text = "120kcal \n32kcal \n20kcal \n22kcal \n120kcal \n32kcal \n 140kcal \n135kcal \n45kcal \n72kcal \n0kcal \n1200kcal"
-        menuInstructionsLabel.text = "1. Place chicken, garlic, ginger, soy sauce, and sesame oil in a small mixing bowl and stir to combine. Let marinate for 15 minutes. \n2. Add chicken and marinade to a heavy-bottom soup pot over medium-low heat. Let cook, stirring occasionally, for 8-10 minutes. Add onion to pot and cook, stirring occasionally, 5-8 minutes, or until onion has softened. \n3. Turn up heat to medium high and add kimchi (no juice), gochujang, and gochugaru. Cook, stirring frequently, for 2 minutes. Add kimchi juice, broth, and water, stir to combine, and lower heat to maintain a simmer for 20 minutes. If you have time to spare, feel free to let simmer for a bit longer. \n4. During the last 2 to 3 minutes of the ramen broth simmering, cook ramen noodles in boiling water until just cooked through (if you cook too long, they will turn to mush). \n5. Divide ramen broth between 6 to 8 bowls. Gently lower in ramen noodles into each bowl. Top with a poached egg and a sprinkle of scallions. Dig in, slurp like crazy, and devour."
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
-
-    func PaleoGadoGado() {
-        menuNameLabel.text = "Paleo Gado Gado"
-        menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
-        menuIngredientLabel.text = "1 Cauliflower \n400 g Green Beans \n200 g Chicken Filet \n75 g Bean Sprouts \n1 Mango in cubes \n1/2 Cucumber in small cubes \n1 Broccoli \n3 Cooked Eggs \nSate sauce ingredients \n170 g Almond Butter \n1 Onion finely sliced \n2 Cloves of garlic sliced \n1 tsp Shrimp Paste \n1 tsp Ginger \n1 can of Coconut Milk"
-        caloriesIngredientLabel.text = "120kcal \n133kcal \n17kcal \n288kcal \n200kcal \n130kcal"
-        menuInstructionsLabel.text = "1. Quickly cook the broccoli and the green beans in boiling water. The broccoli needs no more than 2-3 minutes. The beans need just a bit longer. It needs to be cooked but with a good bite. \n2. Make the sauce by adding a bit of coconut oil into a sauce pan. Bake the onions until translucent. Add the garlic and bake for a minute. \n3. Add the shrimp paste and the ginger. Bake this for a minute or so and add the almond butter. \n4. Add the coconut milk last and stir until it becomes a smooth sauce. Season with salt and pepper to taste \n5. Take two large bowls and make a base with the cauliflower rice. Divide the veggies on top, the chicken and the mango. Add a spoonful of the sauce  on top and add the eggs last. \n6.Traditionally gado gado is served luke warm or cold. \n7. Serve with the remaining sate sauce. \n8. Enjoy your meal!"
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
-    
-    func PrimaveraPizza() {
-        menuNameLabel.text = "Primavera Pizza"
-        menuPortionLabel.text = ""
-        menuIngredientLabel.text = "80 g Strong White Flour \n80 g Strong Brown Flour \n1 tsp Fast Acting Yeast \n100-120ml Warm Water \nPinch of Salt \n1 tin of chopped Tomatoes \n2 tbsp Tomato Puree \n1 tsp Dried Oregano \n70 g Cooked Peas \n125 g Asparagus \n80 g Courgette \n125 g Light Mozzarella Cheese \n45 g Extra Mature Cheddar grated"
-        totalCaloriesLabel.isHidden = true
-        caloriesIngredientLabel.isHidden = true
-        menuInstructionsLabel.text = "1. Preheat the oven to 220C. \n2. Mix the flours, yeast and a pinch of salt in a bowl. Pour in the warm water and mix to a soft dough. Knead for 5 mins. Then cut in half and roll out into two pizza bases approximately 25cm diameter. Place onto baking sheets covered in oiled baking paper and set aside for 20 minutes. \n3. Meanwhile in bowl mix the chopped tomatoes, tomato puree and oregano. \n4. When you are ready to assemble your pizza add some of the tomato sauce to the bases. Sprinkle with the vegetables and top with cheese. \n5. Cook for 15-20 minutes or until golden \n6. Enjoy your meal!"
-        menuNutritionLabel.isHidden = true
-        nutritionInformationLabel.isHidden = true
-        kindOfNutrition.isHidden = true
-    }
+    var name = ""
+    var calories = ""
     
     // Breakfast
     func PumpkinSoup() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "breakfast-1")
         menuNameLabel.text = "Pumpkin Soup"
         menuPortionLabel.text = "1 bowl / 493gr \n308kcal"
         menuIngredientLabel.text = "230 g Hokkaido Pumpkin \n65 g  Potatoes \n40 g 1/2 Onion \n20 g Fresh Ginger \n1 tsp Canola Oil \n200 ml Vegetable Broth \n125 ml Coconut Milk \n140 g Apple \nSalt and Pepper"
@@ -76,6 +45,7 @@ class MenuDetailsVC: UIViewController {
     }
     
     func DakJuk() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "breakfast-3")
         menuNameLabel.text = "Dak Juk"
         menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
         menuIngredientLabel.text = "215 g Short Grain Rice \n1.3 kg Whole Chicken \n8 Medium cloves garlic, 6 Whole and 2 Finely minced, divided \n10 g Fresh Ginger \n3 Scallions, ends trimmed, white and light green parts reserved for broth, green tops sliced thin on a bias, divided \n25 ml Toasted Sesame Oil \n115 g Carrot \n160 g White Onion \n200 g Zucchini"
@@ -87,6 +57,7 @@ class MenuDetailsVC: UIViewController {
     }
     
     func PastaCarbonara() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "breakfast-2")
         menuNameLabel.text = "Pasta Carbonara"
         menuPortionLabel.text = "1 plate \n337kcal"
         menuIngredientLabel.text = "1 tbsp Extra virgin olive oil \n1/2 pound Pancetta \n1-2 Garlic cloves, minced, \n3-4 Whole Eggs \n1 cup Grated Parmesan \n1 pound Spaghetti Pasta \nSalt and black pepper"
@@ -97,8 +68,47 @@ class MenuDetailsVC: UIViewController {
         kindOfNutrition.isHidden = true
     }
     
+    // Lunch
+    func SpicyKimchiRamen() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "lunch-1")
+        menuNameLabel.text = "Spicy Kimchi Ramen"
+        menuPortionLabel.text = "1 bowl \n308kcal"
+        menuIngredientLabel.text = "6-8 servings \n1 pound Boneless Chicken \n4 Cloves Garlic, grated \n1 tbsp Ginger, grated \n2 tbsp Soy Sauce \n1 tsp Sesame Oil \n1 Onion, finely chopped \n16 ounces Kimchi, squeezed dry \n3 tbsp Gochujang \n1 tbsp Gochugaru \n8 cups Chicken or Vegetable Broth \n4 cups Water \n6 packages Instant ramen noodles \n6 to 8 poached eggs \n2 bunches of scallions, chopped"
+        caloriesIngredientLabel.text = "120kcal \n32kcal \n20kcal \n22kcal \n120kcal \n32kcal \n 140kcal \n135kcal \n45kcal \n72kcal \n0kcal \n1200kcal"
+        menuInstructionsLabel.text = "1. Place chicken, garlic, ginger, soy sauce, and sesame oil in a small mixing bowl and stir to combine. Let marinate for 15 minutes. \n2. Add chicken and marinade to a heavy-bottom soup pot over medium-low heat. Let cook, stirring occasionally, for 8-10 minutes. Add onion to pot and cook, stirring occasionally, 5-8 minutes, or until onion has softened. \n3. Turn up heat to medium high and add kimchi (no juice), gochujang, and gochugaru. Cook, stirring frequently, for 2 minutes. Add kimchi juice, broth, and water, stir to combine, and lower heat to maintain a simmer for 20 minutes. If you have time to spare, feel free to let simmer for a bit longer. \n4. During the last 2 to 3 minutes of the ramen broth simmering, cook ramen noodles in boiling water until just cooked through (if you cook too long, they will turn to mush). \n5. Divide ramen broth between 6 to 8 bowls. Gently lower in ramen noodles into each bowl. Top with a poached egg and a sprinkle of scallions. Dig in, slurp like crazy, and devour."
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+
+    func PaleoGadoGado() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "lunch-2")
+        menuNameLabel.text = "Paleo Gado Gado"
+        menuPortionLabel.text = "1 bowl / 450gr \n594kcal"
+        menuIngredientLabel.text = "1 Cauliflower \n400 g Green Beans \n200 g Chicken Filet \n75 g Bean Sprouts \n1 Mango in cubes \n1/2 Cucumber in small cubes \n1 Broccoli \n3 Cooked Eggs \nSate sauce ingredients \n170 g Almond Butter \n1 Onion finely sliced \n2 Cloves of garlic sliced \n1 tsp Shrimp Paste \n1 tsp Ginger \n1 can of Coconut Milk"
+        caloriesIngredientLabel.text = "120kcal \n133kcal \n17kcal \n288kcal \n200kcal \n130kcal"
+        menuInstructionsLabel.text = "1. Quickly cook the broccoli and the green beans in boiling water. The broccoli needs no more than 2-3 minutes. The beans need just a bit longer. It needs to be cooked but with a good bite. \n2. Make the sauce by adding a bit of coconut oil into a sauce pan. Bake the onions until translucent. Add the garlic and bake for a minute. \n3. Add the shrimp paste and the ginger. Bake this for a minute or so and add the almond butter. \n4. Add the coconut milk last and stir until it becomes a smooth sauce. Season with salt and pepper to taste \n5. Take two large bowls and make a base with the cauliflower rice. Divide the veggies on top, the chicken and the mango. Add a spoonful of the sauce  on top and add the eggs last. \n6.Traditionally gado gado is served luke warm or cold. \n7. Serve with the remaining sate sauce. \n8. Enjoy your meal!"
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+    
+    func PrimaveraPizza() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "food???")
+        menuNameLabel.text = "Primavera Pizza"
+        menuPortionLabel.text = ""
+        menuIngredientLabel.text = "80 g Strong White Flour \n80 g Strong Brown Flour \n1 tsp Fast Acting Yeast \n100-120ml Warm Water \nPinch of Salt \n1 tin of chopped Tomatoes \n2 tbsp Tomato Puree \n1 tsp Dried Oregano \n70 g Cooked Peas \n125 g Asparagus \n80 g Courgette \n125 g Light Mozzarella Cheese \n45 g Extra Mature Cheddar grated"
+        totalCaloriesLabel.isHidden = true
+        caloriesIngredientLabel.isHidden = true
+        menuInstructionsLabel.text = "1. Preheat the oven to 220C. \n2. Mix the flours, yeast and a pinch of salt in a bowl. Pour in the warm water and mix to a soft dough. Knead for 5 mins. Then cut in half and roll out into two pizza bases approximately 25cm diameter. Place onto baking sheets covered in oiled baking paper and set aside for 20 minutes. \n3. Meanwhile in bowl mix the chopped tomatoes, tomato puree and oregano. \n4. When you are ready to assemble your pizza add some of the tomato sauce to the bases. Sprinkle with the vegetables and top with cheese. \n5. Cook for 15-20 minutes or until golden \n6. Enjoy your meal!"
+        menuNutritionLabel.isHidden = true
+        nutritionInformationLabel.isHidden = true
+        kindOfNutrition.isHidden = true
+    }
+    
     // Dinner
     func MediterraneanCouscous() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "dinner-1")
         menuNameLabel.text = "Mediterranean Couscous Bowls"
         menuPortionLabel.text = "1 plate \n580kcal"
         menuIngredientLabel.text = "1 unit Bell Pepper \n4 ounce Grape Tomatoes \n1/4 ounce Dill \n4 tbsp Sour Cream \n1/2 cup Couscous \n1 tsp Smoked Paprika \n1 tbsp Turkish Spice Blend \n1 unit Cucumber \n1 unit Lemon \n1 unit Vegetable Broth \n4 tbsp Sabra Classic Hummus \n1/2 cup Feta Cheese \n1 tbsp Olive Oil \n1 tbsp Butter \nSalt and Pepper"
@@ -109,21 +119,28 @@ class MenuDetailsVC: UIViewController {
         menuNutritionLabel.text = "31g \n13g \n60g \n9g \n8g \n17g \n60mg \n700mg"
     }
     
-    func CurriedCod() {
-        menuNameLabel.text = "Curried Cod"
-        menuPortionLabel.text = "1 serves \n296kcal"
-        menuIngredientLabel.text = "1 tbsp oil  \n1 onion, chopped    \n2 tbsp medium curry powder  \nThumb-sized piece ginger, peeled and finely grated  \n3 garlic cloves, crushed    \n2x400g cans chopped tomatoes    \n400g can chickpeas  \n4 cod fillets (about 125-150g each  \nZest 1 lemon, then cut into wedges  handful coriander, roughly chopped"
-        menuInstructionsLabel.text = "1. Heat the oil in a large, lidded frying pan. \n2. Cook the onion over a high heat for a few mins, then stir in the curry powder, ginger and garlic.   \n3. Cook for another 1-2 mins until fragrant, then stir in the tomatoes, chickpeas and some seasoning.   \n4. Cook for 8-10 mins until thickened slightly, then top with the cod.  \n5. Cover and cook for another 5-10 mins until the fish is cooked through.   \n6. Scatter over the lemon zest and coriander, then serve with the lemon wedges to squeeze over."
-        menuNutritionLabel.text = "6g   \n1g  \n22g \n10g \n8g  \n34g \n0.4g"
-    }
-    
-    func RoastedPepper() {
-        menuNameLabel.text = "Roasted Pepper Baked Eggs"
-        menuPortionLabel.text = "4 serves \n271 kcal"
-        menuIngredientLabel.text = "1/2 batch roasted red pepper sauce \n4 eggs \n4 thick slices of ciabatta \nOlive oil \n1 garlic clove \nChopped parsley"
+    func MiddleEastern() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "dinner-3")
+        menuNameLabel.text = "Middle Eastern Steak & Rice Pilaf"
+        menuPortionLabel.text = "1 plate \n780kcal"
         totalCaloriesLabel.isHidden = true
         caloriesIngredientLabel.isHidden = true
-        menuInstructionsLabel.text = "1. Heat oven to 180C/160C \n2. Divide 1/2 batch roasted red pepper sauce between four small baking dishes. \n3. Take 4 eggs and break 1 into each dish. Bake for 7-10 mins until the whites are set and the yolks are still runny. \n4. Put 4 thick slices of ciabatta on a baking tray, drizzle with olive oil, rub with 1 garlic clove and cook in the oven until lightly toasted. \n5. Sprinkle the eggs with chopped parsley and black pepper, and serve with the toasted ciabatta."
+        menuIngredientLabel.text = "6 ounce Carrot \n1 unit Lemon \n1 tbsp Yogurt \n1 unit Zucchini \n1 tsp Smoked Paprika \n2 tbsp Sour Cream \n1 tsp Chili Flakes \n1/2 cup Basmati Rice \n9 ounce Middle Eastern Spiced Steak \n2 clove Garlic \n1 unit Chicken Stock Concentrate \n1/2 ounce Sliced Almonds \n1 tbsp Butter \n4 tsp Olive Oil \nSalt and Pepper"
+        menuInstructionsLabel.text = "1.  Adjust rack to top position and preheat oven to 450 degrees. Wash and dry all produce. • Trim, peel, and cut carrots on a diagonal into ½-inch-thick pieces. Trim and halve zucchini lengthwise; cut crosswise into ½-inch-thick halfmoons. Trim and grate cucumber on the largest holes of a box grater. Mince or grate garlic. Quarter lemon. • 4 SERVINGS: Adjust racks to top and middle positions. \n2. Toss carrots and zucchini on a baking sheet with a large drizzle of olive oil, paprika, salt, and pepper. • Roast on top rack until browned and tender, 18-22 minutes. • 4 SERVINGS: Divide veggies between 2 baking sheets. Roast carrots on top rack and zucchini on middle rack. \n3.Meanwhile, heat a drizzle of olive oil in a small pot over medium-high heat. Reserve a pinch of garlic (you’ll use it in the tzatziki); add remaining garlic to pot. Cook until fragrant, 30 seconds. • Stir in rice, ¾ cup water, stock concentrate, and a big pinch of salt. Bring to a boil, then cover and reduce to a low simmer. Cook until rice is tender, 15-18 minutes. Keep covered off heat until ready to serve. • 4 SERVINGS: Use a medium pot. Use 1½ cups water. \n4.  In a small bowl, combine yogurt, sour cream, half the cucumber (taste and add more from there if desired), juice from 1 lemon wedge, and a big pinch of salt. Stir in reserved garlic if desired. • 4 SERVINGS: Squeeze in juice from 2 lemon wedges. \n5. Season steak* with salt and pepper. Heat a drizzle of olive oil in a large pan over medium-high heat. • Add steak and cook until browned, 4-7 minutes on first side. Flip, reduce heat to medium, and cook until browned and cooked to desired doneness, 4-7 minutes more. Transfer to a cutting board to rest. \n6. Fluff rice with a fork and stir in 1 TBSP butter. Divide between bowls. Arrange veggies on one side of rice. • Slice steak against the grain and arrange next to veggies. Top with tzatziki and almonds. Sprinkle with chili flakes if desired. Serve with remaining lemon wedges on the side. • 4 SERVINGS: Stir in 2 TBSP butter. • TIP: Toast your almonds before garnishing if you like."
+        kindOfNutrition.text = "Protein \nCarbs \nFat \nSaturated Fat \nSugar \nDietary Fiber \nCholesterol \nSodium"
+        menuNutritionLabel.text = "33g   \n68g  \n44g \n15g \n12g  \n7g \n110mg \n620mg"
+    }
+    
+    func HarissaSweet() {
+        menuDetailsImage.image = #imageLiteral(resourceName: "dinner-2")
+        menuNameLabel.text = "Harissa Sweet Potato Pockets"
+        menuPortionLabel.text = "1 plate \n740kcal"
+        menuIngredientLabel.text = "2 unit Sweet Potato \n2 clove Garlic \n1/4 ounce Dill \n4 tbsp Mayonnaise \n2 unit Whole Wheat Pizza \n1 tbsp Harissa Powder \n1 unit Cucumber \n1 unit Avocado \n5 tbsp White Wine Vinegar \n1/2 ounce Pepitas \n2 tsp Olive Oil \nSalt and Pepper"
+        totalCaloriesLabel.isHidden = true
+        caloriesIngredientLabel.isHidden = true
+        menuInstructionsLabel.text = "1. Adjust racks to middle and top positions and preheat oven to 450 degrees. Wash and dry all produce. Slice sweet potatoes into ¼-inch-thick rounds. Toss on a baking sheet with a drizzle of olive oil, 1 tsp harissa powder (2 tsp for 4 servings; you’ll use more later), and a pinch of salt and pepper. Roast on middle rack, flipping halfway through, until tender, 18-20 minutes. \n2. Meanwhile, mince or grate half the garlic (all for 4 servings). Halve cucumber lengthwise; thinly slice crosswise into half-moons. Pick and roughly chop fronds from dill until you have 2 tsp (4 tsp for 4). Halve, pit, and peel avocado, then thinly slice. \n3. In a small bowl, combine mayonnaise, a pinch of minced garlic, and a pinch of harissa powder. Taste and add more garlic and harissa powder if desired. Season with salt and pepper \n4. In a medium bowl, toss together cucumber, chopped dill, vinegar, a drizzle of olive oil, and a pinch of salt and pepper. \n5.Halve pitas and place on a second baking sheet. Once sweet potatoes have 2-3 minutes left, add pitas to top rack and toast until warmed through (they should still be soft and flexible). \n6.Spread harissa mayo inside each toasted pita half, then fill with sweet potatoes, avocado, a few pepitas, and a small amount of cucumber salad. Divide stuffed pitas between plates. Serve with remaining cucumber salad on the side; sprinkle with remaining pepitas."
+        kindOfNutrition.text = "Protein \nCarbs \nFat \nSaturated Fat \nSugar \nDietary Fiber \nCholesterol \nSodium"
+        menuNutritionLabel.text = "14g   \n84g  \n42g \n7g \n11g  \n15g \n25mg \n600mg"
         
     }
 }
