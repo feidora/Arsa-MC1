@@ -29,10 +29,6 @@
                                 <rect key="frame" x="-54" y="232" width="519" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kalimat1" translatesAutoresizingMaskIntoConstraints="NO" id="vLd-vZ-qKX">
-                                <rect key="frame" x="71" y="482" width="312" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqG-ig-zTl">
                                 <rect key="frame" x="63" y="571" width="288" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,6 +52,13 @@
                                     <color key="titleColor" red="0.6588235294" green="0.2666666667" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maintain your calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwW-EC-esX">
+                                <rect key="frame" x="103" y="553" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.6588235294" green="0.2666666667" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,10 +78,6 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foto-3" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-Ue-Ltt">
                                 <rect key="frame" x="-49" y="238" width="519" height="277"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kalimat2" translatesAutoresizingMaskIntoConstraints="NO" id="kG7-Fa-A9B">
-                                <rect key="frame" x="83" y="486" width="312" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwL-LY-tKw">
@@ -127,6 +126,13 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Healthy food recipes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de6-Ur-D05">
+                                <rect key="frame" x="111" y="556" width="193" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.6588235294" green="0.2666666667" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wbJ-4u-7VS"/>
@@ -134,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yo-dV-Bpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600" y="134.59821428571428"/>
+            <point key="canvasLocation" x="2598.5507246376815" y="134.59821428571428"/>
         </scene>
         <!--navControllerMP-->
         <scene sceneID="hmq-1K-lVf">
@@ -150,7 +156,5 @@
     <resources>
         <image name="foto-2" width="359" height="366"/>
         <image name="foto-3" width="359" height="362"/>
-        <image name="kalimat1" width="1345" height="144"/>
-        <image name="kalimat2" width="1346" height="144"/>
     </resources>
 </document>
